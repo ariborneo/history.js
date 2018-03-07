@@ -1,7 +1,34 @@
+Memo
+==================
+While there are some [legitimate bugs and differences in state handling even in modern browsers](https://github.com/browserstate/history.js/wiki/The-State-of-the-HTML5-History-API), they are relatively small enough now that you can just use the native HTML5 History API. If you intend to support legacy browsers, then History.js is your bet.
+
+This notice is here as History.js does not receive enough funding to be maintained, so it exists only in legacy condition for legacy browsers. Perhaps it still works for modern browsers, but it could really do with maintenance. Maintenance is very difficult as the library requires manual testing in HTML5 and HTML4 modes, and for each adapter, and for each browser. So that means `2^(# of adapters)^(# of browsers and their versions)` tests that need to be run by a human. Tests need to be run by a human as certain failures require browser interactions, such as navigating from the test suite to a different domain and back again, or clicking the physical back buttons, or checking if the physical back buttons actually work. This takes a lot of time.
+
+Despite History.js being one of the most popular JavaScript libraries there is, and has been used by even multi-million-user companies in its time - the reality of economy and company practices seems to be that companies prefer to fork their own internal versions and fix locally with their own devs rather than fund open-source maintainers what they would pay their own devs to make things better for everyone, including themselves, which would be cheaper - but no, that would require too many tiers of company approval that don't understand the need.
+
+As such, if you are an open-source developer, I'd recommend just working on open-source projects that are paid for by your own consulting work or your own company (e.g. every successful open-source project). As otherwise, when they become popular, you better hope they are easily maintainable and testable, otherwise the cost of maintenance is higher than the free time of the maintainers.
+
+So with all that said, this repo still exists for archival purposes, legacy browsers, and a hub for anarachistic issue & fork maintenance.
+
+Cheers,
+Benjamin Lupton, founder of Bevry, creator of History.js
+
+
 Welcome to History.js <br/> v1.8b2, June 22 2013
 ==================
 
-[![Flattr this project](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=balupton&url=https://github.com/browserstate/history.js&title=History.js&language=&tags=github&category=software)
+<!-- BADGES/ -->
+
+<span class="badge-slackin"><a href="https://slack.bevry.me" title="Join this project's slack community"><img src="https://slack.bevry.me/badge.svg" alt="Slack community badge" /></a></span>
+<span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
+<span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
+<span class="badge-paypal"><a href="https://bevry.me/paypal" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
+<span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
+<span class="badge-wishlist"><a href="https://bevry.me/wishlist" title="Buy an item on our wishlist for us"><img src="https://img.shields.io/badge/wishlist-donate-yellow.svg" alt="Wishlist browse button" /></a></span>
+
+<!-- /BADGES -->
+
 
 
 ## News
